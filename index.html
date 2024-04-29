@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>git </title>
+    <title>git</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/61d92adc5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body class="container mx-auto font-mulish">
+  <body class="container mx-auto px-2 md:px-8 font-mulish">
     <header>
       <div class="flex justify-between mt-5">
         <div>
@@ -62,19 +69,22 @@
     </header>
 
     <main class="mt-8">
-      <section class="header-banner">
-        <div class="bg-[#12132D] p-4  lg:p-24 rounded-3xl relative grid grid-cols-1 xl:grid-cols-2 gap-20 content-between ">
+      <section class="section-header-banner">
+        <div
+          class="bg-[#12132D] p-4 lg:p-24 rounded-3xl relative grid grid-cols-1 xl:grid-cols-2 gap-20 content-between"
+        >
           <div class="grid gap-3 mt-4 lg:mt-0">
-            <h1 class="text-6xl font-black leading-tight text-white     ">
-              Welcome to the 
+            <h1 class="text-6xl font-black leading-tight text-white">
+              Welcome to the
               <span class="text-indigo-500">ReTro</span> Forum
             </h1>
             <p class="text-lg font-medium leading-8 text-white">
-              Share your favorite opinion and win and wp <br class="hidden xl:block" />
+              Share your favorite opinion and win and wp
+              <br class="hidden xl:block" />
               forum coffee mug!
             </p>
             <label
-              class="input input-bordered flex items-center mt-10 gap-2 w-full max-w-sm py-7 rounded-full "
+              class="input input-bordered flex items-center mt-10 gap-2 w-full max-w-sm py-7 rounded-full"
             >
               <input
                 type="text"
@@ -82,19 +92,18 @@
                 placeholder="Search here anything"
               />
               <button
-                class="bg-[#797DFC] px-5 py-2 rounded-full text-white font-bold text-xl"
+                class="bg-[#262cda] hover:bg-[#0d12a0] px-5 py-2 rounded-full text-white font-bold text-xl"
               >
                 Search
               </button>
             </label>
-            <div class="absolute bottom-[-12px] left-[-2px] ...">
+            <!-- <div class="absolute bottom-[-12px] left-[-2px] ...">
               <img src="images/bgbanner.png" alt="" class="w-[1800px]" />
-            </div>
-            
+            </div> -->
           </div>
-          <div class="bg-white rounded-3xl min-w-full p-6 lg:p-14 lg:w-96 ">
+          <div class="bg-white rounded-3xl min-w-full p-6 lg:p-14 lg:w-96">
             <ul class="grid gap-10">
-              <li class="text-black text-2xl font-medium flex justify-between ">
+              <li class="text-black text-2xl font-medium flex justify-between">
                 <p>Registered Users</p>
                 <p>01</p>
               </li>
@@ -111,6 +120,107 @@
                 <p>01</p>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-discuss my-20">
+        <div class="text-center mb-4">
+          <h2 class="text-4xl font-black text-black mb-4">Let’s Discuss</h2>
+          <p class="text-[#12132D] text-lg font-normal leading-8 font-inter">
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />
+            integrated testing features allow for a streamlined .
+          </p>
+        </div>
+
+        <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
+          <div class="grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl	">
+              <div>
+                <div class="avatar online">
+                <div class="w-16 rounded-full">
+                  <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+              </div>
+                
+              <div class="grid gap-2">
+               <div>
+                <p class="font-inter text-[#12132D] text-base font-medium">
+                  <span class="me-4"># Music</span> Author : Awlad Hossain
+                </p>
+                <p class="text-lg font-bold text-black">
+                  10 Kids Unaware of Their Halloween Costume
+                </p>
+                <p class="font-inter text-[#12132D] text-base font-normal">
+                  It’s one thing to subject yourself to ha Halloween costume
+                  mishap because, <br />
+                  hey that’s your prerogative
+                </p>
+                <hr class="border-dashed border border-gray-400 mt-2" />
+               </div>
+  
+                <div class="flex gap-6 text-red text-lg font-normal text-[#12132D] ">
+                  <p class="flex gap-2 items-center "><i class="fa-regular fa-message"></i><span>560</span></p>
+                  <p class="flex gap-2 items-center "><i class="fa-regular fa-eye"></i><span>560</span></p>
+                  <p class="flex gap-2 items-center "><i class="fa-regular fa-clock"></i><span>560</span></p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="avatar online">
+                <div class="w-16 rounded-full">
+                  <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+              </div>
+                
+              </div>
+              <div class="grid gap-2">
+               <div>
+                <p class="font-inter text-[#12132D] text-base font-medium">
+                  <span class="me-4"># Music</span> Author : Awlad Hossain
+                </p>
+                <p class="text-lg font-bold text-black">
+                  10 Kids Unaware of Their Halloween Costume
+                </p>
+                <p class="font-inter text-[#12132D] text-base font-normal">
+                  It’s one thing to subject yourself to ha Halloween costume
+                  mishap because, <br />
+                  hey that’s your prerogative
+                </p>
+                <hr class="border-dashed border border-gray-400 mt-2" />
+               </div>
+  
+                <div class="flex gap-6 text-red text-lg font-normal text-[#12132D] ">
+                  <p class="flex gap-2 items-center "><i class="fa-regular fa-message"></i><span>560</span></p>
+                  <p class="flex gap-2 items-center "><i class="fa-regular fa-eye"></i><span>560</span></p>
+                  <p class="flex gap-2 items-center "><i class="fa-regular fa-clock"></i><span>560</span></p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="border rounded-3xl bg-[#F3F3F4] p-6  ">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-lg font-bold">Title</h2>
+              <p class="text-base font-normal text-[#12132D
+              ] font-inter">Mark as read (<span>4</span>)</p>
+            </div>
+
+
+            <div class="grid gap-4">
+              <div class="flex gap-10 items-center justify-between bg-white p-4 rounded-3xl">
+                <p class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</p>
+                  <p class="flex gap-2 items-center justify-between text-base font-normal"><i class="fa-regular fa-eye"></i><span>560</span></p>
+              </div>
+
+              <div class="flex gap-10 items-center justify-between bg-white p-4 rounded-3xl">
+                <p class="text-base font-semibold">10 Kids Unaware of Their Halloween Costume</p>
+                  <p class="flex gap-2 items-center justify-between text-base font-normal"><i class="fa-regular fa-eye"></i><span>560</span></p>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
