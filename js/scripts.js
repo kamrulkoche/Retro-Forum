@@ -32,14 +32,13 @@ const displayDiscuss=(discussData)=>{
         <div class="grid gap-2">
           <div>
             <p class="font-inter text-[#12132D] text-base font-medium">
-              <span class="me-4"># Music</span> Author : Awlad Hossain
+              <span class="me-4"># ${discuss.category}</span> Author : ${discuss.author.name}
             </p>
             <p class="text-lg font-bold text-black">
-              10 Kids Unaware of Their Halloween Costume
+              ${discuss.title}
             </p>
             <p class="font-inter text-[#12132D] text-base font-normal">
-              It’s one thing to subject yourself to ha Halloween costume
-              mishap because, hey that’s your prerogative
+             ${discuss.description}
             </p>
             <hr class="border-dashed border border-gray-400 mt-2" />
           </div>
@@ -49,13 +48,13 @@ const displayDiscuss=(discussData)=>{
               class="flex gap-6 text-red text-lg font-normal text-[#12132D]"
             >
               <p class="flex gap-2 items-center">
-                <i class="fa-regular fa-message"></i><span>560</span>
+                <i class="fa-regular fa-message"></i><span>${discuss.comment_count}</span>
               </p>
               <p class="flex gap-2 items-center">
-                <i class="fa-regular fa-eye"></i><span>560</span>
+                <i class="fa-regular fa-eye"></i><span>${discuss.view_count}</span>
               </p>
               <p class="flex gap-2 items-center">
-                <i class="fa-regular fa-clock"></i><span>560</span>min
+                <i class="fa-regular fa-clock"></i><span>${discuss.posted_time}</span>min
               </p>
             </div>
             <div class="bg-green-600 border rounded-3xl">
