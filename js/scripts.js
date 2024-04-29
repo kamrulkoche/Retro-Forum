@@ -72,8 +72,13 @@ const displayDiscuss = (discussData) => {
     
   });
 };
-
+let count = 0;
 function handleShowDetails(title="",view_count=""){
+
+  count++;
+  console.log(count);
+  const markCount=document.getElementById("mark-count");
+  markCount.innerText=count;
   const discussTitle = document.getElementById("discuss-title");
   const titleField = document.createElement("div");
   console.log("Hello",title,view_count);
