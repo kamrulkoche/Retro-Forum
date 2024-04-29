@@ -1,23 +1,23 @@
-const loadDiscuss=async()=>{
-    const res=await fetch(
-        `https://openapi.programming-hero.com/api/retro-forum/posts`
-      );
-    const data=await res.json();
-    const discussData=data.posts;
-    console.log(discussData);
-    displayDiscuss(discussData);
-   
-}
+const loadDiscuss = async () => {
+  const res = await fetch(
+    `https://openapi.programming-hero.com/api/retro-forum/posts`
+  );
+  const data = await res.json();
+  const discussData = data.posts;
+  console.log(discussData);
+  displayDiscuss(discussData);
+};
 
-const displayDiscuss=(discussData)=>{
-    const discussContainer=document.getElementById("discuss-container");
-    console.log(discussData);
+const displayDiscuss = (discussData) => {
+  const discussContainer = document.getElementById("discuss-container");
+  console.log(discussData);
 
-    discussData.forEach((discuss)=>{
-        console.log(discuss);
-        const discussCard = document.createElement("div");
-        // discussCard.classList=`grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl`;
-        discussCard.innerHTML=`
+  discussData.forEach((discuss) => {
+    // console.log(discuss);
+    const discussCard = document.createElement("div");
+    
+    // discussCard.classList=`grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl`;
+    discussCard.innerHTML = `
         <div class="grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl">
         <div>
           <div class="avatar online">
@@ -57,22 +57,41 @@ const displayDiscuss=(discussData)=>{
                 <i class="fa-regular fa-clock"></i><span>${discuss.posted_time}</span>min
               </p>
             </div>
-            <div class="bg-green-600 border rounded-3xl">
+            <button class="bg-green-600 border rounded-3xl" onClick="handleShowDetails('${discuss.title}', '${discuss.view_count}')">
               <i
                 class="fa-solid fa-inbox fa-sm p-1"
                 style="color: #f2f4f8"
               ></i>
-            </div>
+            </button>
           </div>
         </div>
       </div>
         `;
+    discussContainer.appendChild(discussCard);
 
-        discussContainer.appendChild(discussCard);
+    
+  });
+};
 
-    });
+function handleShowDetails(title="",view_count=""){
+  const discussTitle = document.getElementById("discuss-title");
+  const titleField = document.createElement("div");
+  console.log("Hello",title,view_count);
+  titleField.innerHTML = `
+      <div
+      class="flex gap-10 items-center justify-between bg-white p-4 rounded-3xl"
+    >
+      <p class="text-base font-semibold"> ${title}</p>
+     
+      <p
+        class="flex gap-2 items-center justify-between text-base font-normal"
+      >
+        <i class="fa-regular fa-eye"></i><span>${view_count}</span>
+      </p>
+    </div>
+      `;
+
+  discussTitle.appendChild(titleField);
 }
-
-
 
 loadDiscuss();
