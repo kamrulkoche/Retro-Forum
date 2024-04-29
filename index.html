@@ -20,11 +20,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body class="container mx-auto px-2 md:px-8 font-mulish">
+  <body class="container mx-auto px-2 md:px-8 font-mulish bg-white">
     <header>
       <div class="flex justify-between mt-5">
         <div>
-          <h2 class="font-black text-3xl">ReTro</h2>
+          <h2 class="font-black text-3xl text-black">ReTro</h2>
         </div>
 
         <div class="hidden md:block">
@@ -72,7 +72,7 @@
       <!-- section-header-banner -->
       <section class="section-header-banner">
         <div
-          class="bg-[#12132D] p-4 lg:p-24 rounded-3xl relative grid grid-cols-1 xl:grid-cols-2 gap-20 content-between"
+          class="bg-[#12132D] p-4 lg:p-24 rounded-3xl relative grid grid-cols-1 xl:grid-cols-2 gap-12 content-between"
         >
           <div class="grid gap-3 mt-4 lg:mt-0">
             <h1 class="text-6xl font-black leading-tight text-white">
@@ -85,7 +85,7 @@
               forum coffee mug!
             </p>
             <label
-              class="input input-bordered flex items-center mt-10 gap-2 w-full max-w-full md:max-w-sm py-7 rounded-full"
+              class="input input-bordered flex items-center mt-6 gap-2 w-full max-w-full md:max-w-sm py-7 rounded-full bg-white text-black"
             >
               <input
                 type="text"
@@ -103,7 +103,7 @@
             </div> -->
           </div>
           <div class="bg-white rounded-3xl min-w-full p-6 lg:p-14 lg:w-96">
-            <ul class="grid gap-10">
+            <ul class="grid gap-4">
               <li class="text-black text-2xl font-medium flex justify-between">
                 <p>Registered Users</p>
                 <p>01</p>
@@ -137,13 +137,65 @@
         </div>
 
         <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 items-start">
-          <div class="grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl">
+          <div class="grid gap-8 ">
+            <div class="grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl">
             <div>
               <div class="avatar online">
                 <div class="w-16 rounded-full">
                   <img
                     src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
                   />
+                </div>
+              </div>
+            </div>
+
+              <div class="grid gap-2">
+                <div>
+                  <p class="font-inter text-[#12132D] text-base font-medium">
+                    <span class="me-4"># Music</span> Author : Awlad Hossain
+                  </p>
+                  <p class="text-lg font-bold text-black">
+                    10 Kids Unaware of Their Halloween Costume
+                  </p>
+                  <p class="font-inter text-[#12132D] text-base font-normal">
+                    It’s one thing to subject yourself to ha Halloween costume
+                    mishap because, hey that’s your prerogative
+                  </p>
+                  <hr class="border-dashed border border-gray-400 mt-2" />
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <div
+                    class="flex gap-6 text-red text-lg font-normal text-[#12132D]"
+                  >
+                    <p class="flex gap-2 items-center">
+                      <i class="fa-regular fa-message"></i><span>560</span>
+                    </p>
+                    <p class="flex gap-2 items-center">
+                      <i class="fa-regular fa-eye"></i><span>560</span>
+                    </p>
+                    <p class="flex gap-2 items-center">
+                      <i class="fa-regular fa-clock"></i><span>560</span>min
+                    </p>
+                  </div>
+                  <div class="bg-green-600 border rounded-3xl">
+                    <i
+                      class="fa-solid fa-inbox fa-sm p-1"
+                      style="color: #f2f4f8"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-8 border bg-[#F2F2FF] p-6 rounded-3xl">
+              <div>
+                <div class="avatar online">
+                  <div class="w-16 rounded-full">
+                    <img
+                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -186,56 +238,9 @@
               </div>
             </div>
 
-            <div>
-              <div class="avatar online">
-                <div class="w-16 rounded-full">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                </div>
-              </div>
-
-              <div class="grid gap-2">
-                <div>
-                  <p class="font-inter text-[#12132D] text-base font-medium">
-                    <span class="me-4"># Music</span> Author : Awlad Hossain
-                  </p>
-                  <p class="text-lg font-bold text-black">
-                    10 Kids Unaware of Their Halloween Costume
-                  </p>
-                  <p class="font-inter text-[#12132D] text-base font-normal">
-                    It’s one thing to subject yourself to ha Halloween costume
-                    mishap because, hey that’s your prerogative
-                  </p>
-                  <hr class="border-dashed border border-gray-400 mt-2" />
-                </div>
-
-                <div class="flex justify-between items-center">
-                  <div
-                    class="flex gap-6 text-red text-lg font-normal text-[#12132D]"
-                  >
-                    <p class="flex gap-2 items-center">
-                      <i class="fa-regular fa-message"></i><span>560</span>
-                    </p>
-                    <p class="flex gap-2 items-center">
-                      <i class="fa-regular fa-eye"></i><span>560</span>
-                    </p>
-                    <p class="flex gap-2 items-center">
-                      <i class="fa-regular fa-clock"></i><span>560</span>min
-                    </p>
-                  </div>
-                  <div class="bg-green-600 border rounded-3xl">
-                    <i
-                      class="fa-solid fa-inbox fa-sm p-1"
-                      style="color: #f2f4f8"
-                    ></i>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div class="border rounded-3xl bg-[#F3F3F4] p-6">
+          <div class="border rounded-3xl bg-[#F3F3F4] p-6 text-black">
             <div class="flex items-center justify-between mb-4">
               <h2 class="text-lg font-bold">Title</h2>
               <p class="text-base font-normal text-[#12132D ] font-inter">
@@ -383,7 +388,7 @@
       </section>
 
      <footer>
-      <div class="bg-[#F3F3F4] p-6 lg:p-16 text-center rounded-3xl">
+      <div class="bg-[#F3F3F4] p-6 lg:p-16 text-center rounded-3xl text-black">
       <div class="grid gap-3">
         <h3 class="text-black text-4xl font-black">ReTro</h3>
         <p class="text-[#12132D] text-base font-normal">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br class="hidden lg:block"> piece of classical Latin literature from 45 BC</p>
