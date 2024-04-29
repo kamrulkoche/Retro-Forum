@@ -69,6 +69,7 @@
     </header>
 
     <main class="mt-8">
+      <!-- section-header-banner -->
       <section class="section-header-banner">
         <div
           class="bg-[#12132D] p-4 lg:p-24 rounded-3xl relative grid grid-cols-1 xl:grid-cols-2 gap-20 content-between"
@@ -84,7 +85,7 @@
               forum coffee mug!
             </p>
             <label
-              class="input input-bordered flex items-center mt-10 gap-2 w-full max-w-sm py-7 rounded-full"
+              class="input input-bordered flex items-center mt-10 gap-2 w-full max-w-full md:max-w-sm py-7 rounded-full"
             >
               <input
                 type="text"
@@ -124,12 +125,13 @@
         </div>
       </section>
 
+      <!-- section-discuss -->
       <section class="section-discuss my-20">
         <div class="text-center mb-4">
           <h2 class="text-4xl font-black text-black mb-4">Let’s Discuss</h2>
           <p class="text-[#12132D] text-lg font-normal leading-8 font-inter">
             Yes, you can run unit tests and view the results directly within the
-            app. The <br />
+            app. The <br class="hidden lg:block" />
             integrated testing features allow for a streamlined .
           </p>
         </div>
@@ -155,8 +157,7 @@
                   </p>
                   <p class="font-inter text-[#12132D] text-base font-normal">
                     It’s one thing to subject yourself to ha Halloween costume
-                    mishap because, <br />
-                    hey that’s your prerogative
+                    mishap because, hey that’s your prerogative
                   </p>
                   <hr class="border-dashed border border-gray-400 mt-2" />
                 </div>
@@ -204,8 +205,7 @@
                   </p>
                   <p class="font-inter text-[#12132D] text-base font-normal">
                     It’s one thing to subject yourself to ha Halloween costume
-                    mishap because, <br />
-                    hey that’s your prerogative
+                    mishap because, hey that’s your prerogative
                   </p>
                   <hr class="border-dashed border border-gray-400 mt-2" />
                 </div>
@@ -274,6 +274,7 @@
         </div>
       </section>
 
+      <!-- section-registered-banner -->
       <section class="section-registered-banner">
         <div
           class="bg-[#12132D] p-4 lg:p-24 rounded-3xl grid grid-cols-1 xl:grid-cols-2 justify-items-center gap-20"
@@ -285,13 +286,121 @@
               you can run unit tests and view the results directly within the
               app.
             </p>
-            <button class="btn btn-primary text-white w-max">Registered Now</button>
+            <button class="btn btn-primary text-white w-max">
+              Registered Now
+            </button>
           </div>
           <div>
-            <img src="images/joinforum.png" alt="" class="w-64 h-auto">
+            <img src="images/joinforum.png" alt="" class="w-64 h-auto" />
           </div>
         </div>
       </section>
+
+      <!-- section-latest Posts -->
+      <section class="section-latest Posts my-20">
+        <div class="text-center my-5">
+          <h1 class="text-4xl font-black text-black mb-4">Latest Posts</h1>
+          <p class="text-[#12132D] text-lg font-normal leading-8 font-inter">
+            Yes, you can run unit tests and view the results directly within the
+            app.The <br class="hidden lg:block" />
+            integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- card field -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div>
+            <div class="border-2 rounded-2xl p-5">
+              <div class="bg-[#F3F3F4] rounded-2xl p-6 h-40"></div>
+
+              <div class="grid gap-1 mt-5">
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-calendar"></i>
+                  <p class="text-[#12132D] font-normal text-base">
+                    29 January 2024
+                  </p>
+                </div>
+                <h3 class="text-xl font-extrabold">
+                  What will a mars habitat force that impact in our daily
+                  life!!!
+                </h3>
+                <p class="text-[#12132D] font-normal text-base">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-4 items-center">
+                  <div class="avatar">
+                    <div class="w-10 h-10 rounded-full">
+                      <img
+                        src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold">Cameron Williamson</h3>
+                    <p class="text-[#12132D] font-normal text-base">Unknown</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="border-2 rounded-2xl p-5">
+              <div class="bg-[#F3F3F4] rounded-2xl p-6 h-40"></div>
+
+              <div class="grid gap-1 mt-5">
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-calendar"></i>
+                  <p class="text-[#12132D] font-normal text-base">
+                    29 January 2024
+                  </p>
+                </div>
+                <h3 class="text-xl font-extrabold">
+                  What will a mars habitat force that impact in our daily
+                  life!!!
+                </h3>
+                <p class="text-[#12132D] font-normal text-base">
+                  Yes, you can run unit tests and view the results directly
+                  within the app.
+                </p>
+                <div class="flex gap-4 items-center">
+                  <div class="avatar">
+                    <div class="w-10 h-10 rounded-full">
+                      <img
+                        src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold">Cameron Williamson</h3>
+                    <p class="text-[#12132D] font-normal text-base">Unknown</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <footer>
+      <div class="bg-[#F3F3F4] p-6 lg:p-16 text-center rounded-3xl">
+      <div class="grid gap-3">
+        <h3 class="text-black text-4xl font-black">ReTro</h3>
+        <p class="text-[#12132D] text-base font-normal">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br class="hidden lg:block"> piece of classical Latin literature from 45 BC</p>
+      </div>
+
+        <ul class="flex justify-center gap-5 mt-6 ">
+          <li><i class="fa-brands fa-twitter cursor-pointer"></i></li>
+          <li><i class="fa-brands fa-facebook-f cursor-pointer"></i></li>
+          <li><i class="fa-brands fa-instagram cursor-pointer"></i></li>
+          <li><i class="fa-brands fa-github cursor-pointer"></i></li>
+        </ul>
+        <hr class="border my-6 border-gray-200">
+        <p class="text-lg font-light text-[#12132D]">2024, All Rights Reserved.</p>
+      
+    </div>
+     </footer>
+
     </main>
     <script src="js/scripts.js"></script>
   </body>
