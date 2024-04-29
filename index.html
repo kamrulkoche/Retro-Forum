@@ -70,10 +70,14 @@
 
     <main class="mt-8">
       <!-- section-header-banner -->
-      <section class="section-header-banner">
+      <section class="section-header-banner ">
         <div
-          class="bg-[#12132D] p-4 lg:p-24 rounded-3xl relative grid grid-cols-1 xl:grid-cols-2 gap-12 content-between"
+          class="bg-[#12132D] rounded-3xl relative "
         >
+        <div class="absolute bottom-[-12px] left-[-2px] ...">
+          <img src="images/bgbanner.png" alt="" class="w-[1800px]" />
+        </div>
+        <div class="p-4 lg:p-24 rounded-3xl  grid grid-cols-1 xl:grid-cols-2 gap-12 content-between relative">
           <div class="grid gap-3 mt-4 lg:mt-0">
             <h1 class="text-6xl font-black leading-tight text-white">
               Welcome to the
@@ -85,7 +89,7 @@
               forum coffee mug!
             </p>
             <label
-              class="input input-bordered flex items-center mt-6 gap-2 w-full max-w-full md:max-w-sm py-7 rounded-full bg-white text-black"
+              class="input input-bordered flex items-center mt-6 gap-2 w-full max-w-full md:max-w-sm py-7 rounded-full bg-white text-black relative"
             >
               <input
                 type="text"
@@ -98,11 +102,8 @@
                 Search
               </button>
             </label>
-            <!-- <div class="absolute bottom-[-12px] left-[-2px] ...">
-              <img src="images/bgbanner.png" alt="" class="w-[1800px]" />
-            </div> -->
           </div>
-          <div class="bg-white rounded-3xl min-w-full p-6 lg:p-14 lg:w-96">
+          <div class=" bg-white rounded-3xl min-w-full p-6 lg:p-14 lg:w-96">
             <ul class="grid gap-4">
               <li class="text-black text-2xl font-medium flex justify-between">
                 <p>Registered Users</p>
@@ -122,6 +123,8 @@
               </li>
             </ul>
           </div>
+        </div>
+        
         </div>
       </section>
 
