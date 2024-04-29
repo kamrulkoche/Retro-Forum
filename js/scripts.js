@@ -1,10 +1,10 @@
 const loadDiscuss=async()=>{
     const res=await fetch(
-        `https://openapi.programming-hero.com/api/retro-forum/latest-posts`
+        `https://openapi.programming-hero.com/api/retro-forum/posts`
       );
     const data=await res.json();
-    const discussData=data;
-    // console.log(discussData);
+    const discussData=data.posts;
+    console.log(discussData);
     displayDiscuss(discussData);
    
 }
@@ -23,7 +23,7 @@ const displayDiscuss=(discussData)=>{
           <div class="avatar online">
             <div class="w-16 rounded-full">
               <img
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                src="${discuss.image}"
               />
             </div>
           </div>
