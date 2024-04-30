@@ -98,16 +98,25 @@
                 class="input input-bordered flex items-center mt-6 gap-2 w-full max-w-full md:max-w-sm py-7 rounded-full bg-white text-black relative"
               >
                 <input
+                  id="search-field"
                   type="text"
                   class="grow"
                   placeholder="Search here anything"
                 />
                 <button
+                  onclick="handleSearch()"
                   class="bg-[#262cda] hover:bg-[#0d12a0] px-5 py-2 rounded-full text-white font-bold text-xl"
                 >
                   Search
                 </button>
               </label>
+              <!-- search not found  -->
+              <div>
+                <span
+                  id="search-not-found"
+                  class="text-3xl font-semibold text-red-600"
+                ></span>
+              </div>
             </div>
             <div class="bg-white rounded-3xl min-w-full p-6 lg:p-14 lg:w-96">
               <ul class="grid gap-4">
@@ -153,6 +162,12 @@
         </div>
 
         <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 items-start">
+          <!-- loading-spinner -->
+          <!-- <div id="loading-spinner" class="text-center my-40">
+            <span
+              class="loading loading-spinner text-primary loading-lg"
+            ></span>
+          </div> -->
           <div id="discuss-container" class="grid gap-8">
             <!-- dynamic add -->
           </div>
@@ -203,84 +218,10 @@
           </p>
         </div>
         <!-- card field -->
-        <div id="latest-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-          <!-- <div>
-            <div class="border-2 rounded-2xl p-5">
-              <div class="bg-[#F3F3F4] rounded-2xl p-6 h-40"></div>
-
-              <div class="grid gap-1 mt-5">
-                <div class="flex items-center gap-4">
-                  <i class="fa-solid fa-calendar"></i>
-                  <p class="text-[#12132D] font-normal text-base">
-                    29 January 2024
-                  </p>
-                </div>
-                <h3 class="text-xl font-extrabold text-black">
-                  What will a mars habitat force that impact in our daily
-                  life!!!
-                </h3>
-                <p class="text-[#12132D] font-normal text-base">
-                  Yes, you can run unit tests and view the results directly
-                  within the app.
-                </p>
-                <div class="flex gap-4 items-center">
-                  <div class="avatar">
-                    <div class="w-10 h-10 rounded-full">
-                      <img
-                        src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-bold text-black">
-                      Cameron Williamson
-                    </h3>
-                    <p class="text-[#12132D] font-normal text-base">Unknown</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div>
-            <div class="border-2 rounded-2xl p-5">
-              <div class="bg-[#F3F3F4] rounded-2xl p-6 h-40"></div>
-
-              <div class="grid gap-1 mt-5">
-                <div class="flex items-center gap-4">
-                  <i class="fa-solid fa-calendar"></i>
-                  <p class="text-[#12132D] font-normal text-base">
-                    29 January 2024
-                  </p>
-                </div>
-                <h3 class="text-xl font-extrabold text-black">
-                  What will a mars habitat force that impact in our daily
-                  life!!!
-                </h3>
-                <p class="text-[#12132D] font-normal text-base">
-                  Yes, you can run unit tests and view the results directly
-                  within the app.
-                </p>
-                <div class="flex gap-4 items-center">
-                  <div class="avatar">
-                    <div class="w-10 h-10 rounded-full">
-                      <img
-                        src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-bold text-black">
-                      Cameron Williamson
-                    </h3>
-                    <p class="text-[#12132D] font-normal text-base">Unknown</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div
+          id="latest-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+        ></div>
       </section>
     </main>
 

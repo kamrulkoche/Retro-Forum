@@ -1,16 +1,24 @@
-const loadDiscuss = async () => {
+const loadDiscuss = async (searchText = "") => {
   const res = await fetch(
-    `https://openapi.programming-hero.com/api/retro-forum/posts`
+    `https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`
   );
   const data = await res.json();
   const discussData = data.posts;
-  // console.log(discussData);
+  //  console.log(discussData);
   displayDiscuss(discussData);
+
+  const searchNotFound = document.getElementById("search-not-found");
+  searchNotFound.innerText = "";
+  // console.log("discussData details", discussData);
+  if (discussData.length === 0) {
+    searchNotFound.innerText = "Item not found !";
+  }
 };
 
 const displayDiscuss = (discussData) => {
   const discussContainer = document.getElementById("discuss-container");
-  // console.log(discussData);
+  discussContainer.innerText = "";
+  // console.log(discussContainer);
 
   discussData.forEach((discuss) => {
     // console.log(discuss);
@@ -109,10 +117,10 @@ const loadLatest = async () => {
 
 const displayLatest = (latestData) => {
   const latestContainer = document.getElementById("latest-container");
-  console.log(latestData);
+  // console.log(latestData);
 
   latestData.forEach((latest) => {
-    console.log(latest.author.posted_date ?? "N/A");
+    // console.log(latest.author.posted_date ?? "N/A");
     const latestCard = document.createElement("div");
     latestCard.innerHTML = `
     <div>
@@ -148,7 +156,9 @@ const displayLatest = (latestData) => {
             <h3 class="text-lg font-bold text-black">
             ${latest.author.name ?? "N/A"}
             </h3>
-            <p class="text-[#12132D] font-normal text-base"> ${latest.author.designation ?? "N/A"}</p>
+            <p class="text-[#12132D] font-normal text-base"> ${
+              latest.author.designation ?? "N/A"
+            }</p>
           </div>
         </div>
       </div>
@@ -157,6 +167,13 @@ const displayLatest = (latestData) => {
     `;
     latestContainer.appendChild(latestCard);
   });
+};
+
+const handleSearch = () => {
+  const searchField = document.getElementById("search-field");
+  const searchText = searchField.value;
+  // console.log(searchText);
+  loadDiscuss(searchText);
 };
 
 loadDiscuss();
