@@ -48,9 +48,7 @@ const displayDiscuss = (discussData) => {
         <div class="grid gap-2">
           <div>
             <p class="font-inter text-[#12132D] text-base font-medium">
-              <span class="me-4"># ${discuss.category}</span> Author : ${
-      discuss.author.name
-    }
+              <span class="me-4"># ${discuss.category}</span> Author : ${discuss.author.name}
             </p>
             <p class="text-lg font-bold text-black">
               ${discuss.title}
@@ -66,24 +64,16 @@ const displayDiscuss = (discussData) => {
               class="flex gap-6 text-red text-lg font-normal text-[#12132D]"
             >
               <p class="flex gap-2 items-center">
-                <i class="fa-regular fa-message"></i><span>${
-                  discuss.comment_count
-                }</span>
+                <i class="fa-regular fa-message"></i><span>${discuss.comment_count}</span>
               </p>
               <p class="flex gap-2 items-center">
-                <i class="fa-regular fa-eye"></i><span>${
-                  discuss.view_count
-                }</span>
+                <i class="fa-regular fa-eye"></i><span>${discuss.view_count}</span>
               </p>
               <p class="flex gap-2 items-center">
-                <i class="fa-regular fa-clock"></i><span>${
-                  discuss.posted_time
-                }</span>min
+                <i class="fa-regular fa-clock"></i><span>${discuss.posted_time}</span>min
               </p>
             </div>
-            <button class="bg-green-600 border rounded-3xl" onClick="handleShowDetails('${
-              discuss.title
-            }', '${discuss.view_count}')">
+            <button class="bg-green-600 border rounded-3xl" onClick="handleShowDetails('${discuss.title}', '${discuss.view_count}')">
               <i
                 class="fa-solid fa-inbox fa-sm p-1"
                 style="color: #f2f4f8"
